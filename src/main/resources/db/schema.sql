@@ -1,3 +1,5 @@
+USE local_msabootcamp;
+
 CREATE TABLE IF NOT EXISTS shedlock
 (
     name       varchar(64) NOT NULL,
@@ -20,4 +22,3 @@ CREATE TABLE IF NOT EXISTS persistent_events
     PRIMARY KEY (id)/*,
     KEY           IDX_STATUS_EVENTTYPE (status,event_type)*/
 );
-
