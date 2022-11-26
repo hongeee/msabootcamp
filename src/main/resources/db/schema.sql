@@ -1,4 +1,4 @@
-USE local_msabootcamp;
+-- USE local_msabootcamp;
 
 CREATE TABLE IF NOT EXISTS shedlock
 (
