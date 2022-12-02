@@ -1,5 +1,6 @@
 package com.vroong.msabootcamp.domain;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import java.time.Duration;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
@@ -28,5 +29,5 @@ public class Song extends AuditableEntity {
 
   private Duration playTime;
 
-  @ManyToOne private Album album;
+  @ManyToOne @JsonIgnore private Album album;
 }
