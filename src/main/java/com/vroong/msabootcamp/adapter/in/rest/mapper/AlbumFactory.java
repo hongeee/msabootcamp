@@ -23,6 +23,7 @@ public class AlbumFactory {
     if (dto.getSinger() != null) {
       final Singer singer = new Singer();
 
+      singer.setId(dto.getSinger().getSingerId());
       singer.setName(dto.getSinger().getName());
       entity.setSinger(singer);
     }

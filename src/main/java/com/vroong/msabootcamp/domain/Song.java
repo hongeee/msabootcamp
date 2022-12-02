@@ -19,7 +19,7 @@ import lombok.ToString;
 @Setter
 @ToString(exclude = {"album"})
 @EqualsAndHashCode(of = {"id"})
-public class Song extends AuditableEntity {
+public class Song {
 
   @Id
   @GeneratedValue(strategy = GenerationType.IDENTITY)

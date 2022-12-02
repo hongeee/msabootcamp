@@ -10,7 +10,7 @@ import org.springframework.stereotype.Component;
 @Component
 public class SongMapper {
 
-  public SongDto toEntity(Song entity) {
+  public SongDto toDto(Song entity) {
     if (entity == null) {
       return new SongDto();
     }
@@ -21,14 +21,14 @@ public class SongMapper {
         .playTime(entity.getPlayTime().toString());
   }
 
-  public List<SongDto> toEntity(Set<Song> entitySet) {
+  public List<SongDto> toDto(Set<Song> entitySet) {
     final List<SongDto> dtoList = new ArrayList<>();
 
     if (entitySet == null) {
       return dtoList;
     }
 
-    entitySet.forEach(e -> dtoList.add(toEntity(e)));
+    entitySet.forEach(e -> dtoList.add(toDto(e)));
 
     return dtoList;
   }

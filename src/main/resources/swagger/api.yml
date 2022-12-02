@@ -226,7 +226,7 @@ components:
 
     PlayTime:
       type: string
-      example: 03:20
+      example: PT3M20S
 
     #----------------------------------------
     # API Model

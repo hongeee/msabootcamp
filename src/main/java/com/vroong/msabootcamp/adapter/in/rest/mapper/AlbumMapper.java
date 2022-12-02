@@ -25,7 +25,7 @@ public class AlbumMapper {
         .title(entity.getTitle())
         .published(dateTimeMapper.toOffsetDateTime(entity.getPublished()))
         .singer(singerMapper.toDto(entity.getSinger()))
-        .songs(songMapper.toEntity(entity.getSongs()));
+        .songs(songMapper.toDto(entity.getSongs()));
   }
 
   public List<AlbumDto> toDto(List<Album> entitySet) {
